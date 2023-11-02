@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>scoping3</title>
+</head>
+<body>
+    <script>
+        const pi = Math.PI
+        const phi = (1 + Math.sqrt(5)) / 2; //phi: the golden ratio
+
+        for (let i = 0; i <= 10; i++) { 
+            // more computationally efficient: recycles a constant integer instead of calculating a function everytime.
+                if (i < pi) {
+                    console.log("below");
+                    console.log("inside i: " + i);
+                } else {
+                    console.log("above")
+                }
+                }
+            
+
+        // for loop - 1:  initialization 2: termination condition, 3: incremental statement.
+        // iteration is the repatition, a for loop is what carries it out.
+        for (let i = 0; i <=10; i= i +1) {
+            console.log("inside i: " + i)
+        }
+
+        console.log("outside i: " + i)
+
+        
+        for (let i = 0; i <=10; i= i +1) {
+            console.log("inside i: " + i)
+        }
+        // let symbol
+        // declares a variable that has a local scope
+        // local scope - variable can only be used within a code block.
+
+    </script>
+</body>
+</html>
